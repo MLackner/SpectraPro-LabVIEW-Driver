@@ -18,33 +18,54 @@
 		<Item Name="teardown.vi" Type="VI" URL="../Libraries/test/teardown.vi"/>
 		<Item Name="setup.lvtest" Type="TestItem" URL="../Libraries/test/setup.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:setup.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">2EE0AF4B-1F16-9A94-A81A-37E35DF5CCE4</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">9F8B8F4C-D07F-EB82-6314-566C646D2309</Property>
 		</Item>
 		<Item Name="query_template.lvtest" Type="TestItem" URL="../Libraries/utility/query_template.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:query_template.vit</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">1233738E-ADEE-44A6-8EB7-852F8C4036D3</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">CAD407CD-B4ED-A981-5E67-5AD04EE653D0</Property>
 		</Item>
 		<Item Name="Read Wavelength.lvtest" Type="TestItem" URL="../Libraries/Wavelength/Read Wavelength.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Read Wavelength.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">7FC939B6-2262-8771-6025-38C50CAAC2CC</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">B3177B64-A3BD-2005-97AC-7E5C81D1E7E8</Property>
 		</Item>
 		<Item Name="Set Wavelength.lvtest" Type="TestItem" URL="../Libraries/Wavelength/Set Wavelength.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Set Wavelength.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">F0339B6D-535F-49B8-50BF-858F7A226331</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">E4570934-1E91-22E4-4C8E-17957FA46C71</Property>
 		</Item>
+		<Item Name="Select Side Entrance.lvtest" Type="TestItem" URL="../Libraries/Slit Width/Select Side Entrance.lvtest">
+			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Select Side Entrance.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">071211A4-7F4A-3A3E-EA0D-A7428E58C70A</Property>
+		</Item>
+		<Item Name="Read Slit Width.lvtest" Type="TestItem" URL="../Libraries/Slit Width/Read Slit Width.lvtest">
+			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Read Slit Width.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">DB30C53B-7561-5C16-9FF7-625369B7CB7A</Property>
+		</Item>
+		<Item Name="Set Slit Width.lvtest" Type="TestItem" URL="../Libraries/Slit Width/Set Slit Width.lvtest">
+			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Set Slit Width.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">85432D91-24B2-A5DA-7A23-21B9A5EC2A82</Property>
+		</Item>
+		<Item Name="testset.vi" Type="VI" URL="../Libraries/test/testset.vi"/>
 	</Item>
 	<Item Name="Wavelength" Type="Folder">
 		<Item Name="Read Wavelength.vi" Type="VI" URL="../Libraries/Wavelength/Read Wavelength.vi"/>
 		<Item Name="Set Wavelength.vi" Type="VI" URL="../Libraries/Wavelength/Set Wavelength.vi"/>
 	</Item>
 	<Item Name="Diverter" Type="Folder"/>
-	<Item Name="Grating" Type="Folder"/>
+	<Item Name="Grating" Type="Folder">
+		<Item Name="Read Grating ID.vi" Type="VI" URL="../Libraries/Gratings/Read Grating ID.vi"/>
+		<Item Name="Set Grating.vi" Type="VI" URL="../Libraries/Gratings/Set Grating.vi"/>
+	</Item>
 	<Item Name="Grating Calibration" Type="Folder"/>
 	<Item Name="Slit Width" Type="Folder">
 		<Item Name="Select Side Entrance.vi" Type="VI" URL="../Libraries/Slit Width/Select Side Entrance.vi"/>
+		<Item Name="Set Slit Width.vi" Type="VI" URL="../Libraries/Slit Width/Set Slit Width.vi"/>
+		<Item Name="Read Slit Width.vi" Type="VI" URL="../Libraries/Slit Width/Read Slit Width.vi"/>
 	</Item>
 	<Item Name="Status" Type="Folder">
 		<Item Name="Open Device.vi" Type="VI" URL="../Libraries/Status/Open Device.vi"/>
 		<Item Name="Close Device.vi" Type="VI" URL="../Libraries/Status/Close Device.vi"/>
+		<Item Name="Reached Destination.vi" Type="VI" URL="../Libraries/Status/Reached Destination.vi"/>
+		<Item Name="Reinitialize.vi" Type="VI" URL="../Libraries/Status/Reinitialize.vi"/>
+		<Item Name="Wait Until Done.vi" Type="VI" URL="../Libraries/Status/Wait Until Done.vi"/>
 	</Item>
 </Library>
