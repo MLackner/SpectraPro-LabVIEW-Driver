@@ -18,31 +18,31 @@
 		<Item Name="teardown.vi" Type="VI" URL="../Libraries/test/teardown.vi"/>
 		<Item Name="setup.lvtest" Type="TestItem" URL="../Libraries/test/setup.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:setup.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">9F8B8F4C-D07F-EB82-6314-566C646D2309</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">5CDB02E4-3F45-4350-B49B-79030791EA1C</Property>
 		</Item>
 		<Item Name="query_template.lvtest" Type="TestItem" URL="../Libraries/utility/query_template.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:query_template.vit</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">CAD407CD-B4ED-A981-5E67-5AD04EE653D0</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">7D4795B9-0344-A208-8F51-204EE5C21EDB</Property>
 		</Item>
 		<Item Name="Read Wavelength.lvtest" Type="TestItem" URL="../Libraries/Wavelength/Read Wavelength.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Read Wavelength.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">B3177B64-A3BD-2005-97AC-7E5C81D1E7E8</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">BD99E43E-63AC-1787-0405-5940058C6979</Property>
 		</Item>
 		<Item Name="Set Wavelength.lvtest" Type="TestItem" URL="../Libraries/Wavelength/Set Wavelength.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Set Wavelength.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">E4570934-1E91-22E4-4C8E-17957FA46C71</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">66CDFC98-543F-3D27-DAA4-4AD27CF3D1B9</Property>
 		</Item>
 		<Item Name="Select Side Entrance.lvtest" Type="TestItem" URL="../Libraries/Slit Width/Select Side Entrance.lvtest">
-			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Select Side Entrance.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">071211A4-7F4A-3A3E-EA0D-A7428E58C70A</Property>
+			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Select Entrance Mirror.vi</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">96474EFD-F2F9-C19C-3C4F-B004E38C8D4A</Property>
 		</Item>
 		<Item Name="Read Slit Width.lvtest" Type="TestItem" URL="../Libraries/Slit Width/Read Slit Width.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Read Slit Width.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">DB30C53B-7561-5C16-9FF7-625369B7CB7A</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">DFCC5F04-1EC3-4F5F-F4C2-29401199A5F1</Property>
 		</Item>
 		<Item Name="Set Slit Width.lvtest" Type="TestItem" URL="../Libraries/Slit Width/Set Slit Width.lvtest">
 			<Property Name="utf.test.bind" Type="Str">SpectraPro.lvlib:Set Slit Width.vi</Property>
-			<Property Name="utf.vector.test.bind" Type="Str">85432D91-24B2-A5DA-7A23-21B9A5EC2A82</Property>
+			<Property Name="utf.vector.test.bind" Type="Str">5BB85D75-98A9-B7AB-6E14-58CBBEE45BA9</Property>
 		</Item>
 		<Item Name="testset.vi" Type="VI" URL="../Libraries/test/testset.vi"/>
 	</Item>
@@ -50,16 +50,25 @@
 		<Item Name="Read Wavelength.vi" Type="VI" URL="../Libraries/Wavelength/Read Wavelength.vi"/>
 		<Item Name="Set Wavelength.vi" Type="VI" URL="../Libraries/Wavelength/Set Wavelength.vi"/>
 	</Item>
-	<Item Name="Diverter" Type="Folder"/>
+	<Item Name="Diverter" Type="Folder">
+		<Item Name="Select Entrance Mirror.vi" Type="VI" URL="../Libraries/Diverter/Select Entrance Mirror.vi"/>
+		<Item Name="Select Exit Mirror.vi" Type="VI" URL="../Libraries/Diverter/Select Exit Mirror.vi"/>
+		<Item Name="Set Front Port.vi" Type="VI" URL="../Libraries/Diverter/Set Front Port.vi"/>
+		<Item Name="Set Side Port.vi" Type="VI" URL="../Libraries/Diverter/Set Side Port.vi"/>
+		<Item Name="Get Diverter Port.vi" Type="VI" URL="../Libraries/Diverter/Get Diverter Port.vi"/>
+	</Item>
 	<Item Name="Grating" Type="Folder">
 		<Item Name="Read Grating ID.vi" Type="VI" URL="../Libraries/Gratings/Read Grating ID.vi"/>
 		<Item Name="Set Grating.vi" Type="VI" URL="../Libraries/Gratings/Set Grating.vi"/>
 	</Item>
 	<Item Name="Grating Calibration" Type="Folder"/>
 	<Item Name="Slit Width" Type="Folder">
-		<Item Name="Select Side Entrance.vi" Type="VI" URL="../Libraries/Slit Width/Select Side Entrance.vi"/>
 		<Item Name="Set Slit Width.vi" Type="VI" URL="../Libraries/Slit Width/Set Slit Width.vi"/>
 		<Item Name="Read Slit Width.vi" Type="VI" URL="../Libraries/Slit Width/Read Slit Width.vi"/>
+		<Item Name="Select Side Entrance.vi" Type="VI" URL="../Libraries/Slit Width/Select Side Entrance.vi"/>
+		<Item Name="Select Side Exit.vi" Type="VI" URL="../Libraries/Slit Width/Select Side Exit.vi"/>
+		<Item Name="Select Front Exit.vi" Type="VI" URL="../Libraries/Slit Width/Select Front Exit.vi"/>
+		<Item Name="Select Front Entrance.vi" Type="VI" URL="../Libraries/Slit Width/Select Front Entrance.vi"/>
 	</Item>
 	<Item Name="Status" Type="Folder">
 		<Item Name="Open Device.vi" Type="VI" URL="../Libraries/Status/Open Device.vi"/>
@@ -67,5 +76,8 @@
 		<Item Name="Reached Destination.vi" Type="VI" URL="../Libraries/Status/Reached Destination.vi"/>
 		<Item Name="Reinitialize.vi" Type="VI" URL="../Libraries/Status/Reinitialize.vi"/>
 		<Item Name="Wait Until Done.vi" Type="VI" URL="../Libraries/Status/Wait Until Done.vi"/>
+	</Item>
+	<Item Name="Types" Type="Folder">
+		<Item Name="Diverter Port.ctl" Type="VI" URL="../Libraries/Types/Diverter Port.ctl"/>
 	</Item>
 </Library>
